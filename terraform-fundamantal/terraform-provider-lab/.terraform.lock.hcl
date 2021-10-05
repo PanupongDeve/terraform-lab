@@ -1,0 +1,40 @@
+# This file is maintained automatically by "terraform init".
+# Manual edits may be lost in future updates.
+
+provider "registry.terraform.io/hashicorp/aws" {
+  version     = "3.7.0"
+  constraints = "3.7.0"
+  hashes = [
+    "h1:bZGW9CuoAOWqM3TVKa4kbnQhoZ9pFS+wH33Q/xRyXcw=",
+    "zh:261263f20da3e558693d9f963b5d70ebaf7096fe3ec33d011f8f20322d5e02d4",
+    "zh:37892e7634d3ec8a599b86569c32ff7f323e0840a6fde9e4eb82ba7b654c5d86",
+    "zh:54a75bc0c94ed8fefa050a69749440b902cc88731dd312385d5928d23f08b3e1",
+    "zh:620a4944eb60bdd2952477abf9391c5504e17295cb89e9b9b601e7577b037b01",
+    "zh:63ee761ebb01817824816288725ccd722c2e1f2ab0f2645f0a5b0703a599c3bf",
+    "zh:8160670ac718c437b84de43368712387afa979e55cf487c6350252fd93c7eb85",
+    "zh:a6baaa9670e400482f55078c464dc9e9f8a548a4dfc8f3116e94db8686e69f0b",
+    "zh:aaec3b0644b3e523ca1cc8a117362379d213f3bd8906047bfe42c2a633f78a05",
+    "zh:bcae7acf6a6895902e092004a2a6078a664a0457c1a3d0d36589b3aca8e09632",
+    "zh:cb84c9329fc9c7a0dbf17ae656541c322f5679676672b61a59b6726eb0141c88",
+  ]
+}
+
+provider "registry.terraform.io/hashicorp/azurerm" {
+  version     = "2.20.0"
+  constraints = "2.20.0"
+  hashes = [
+    "h1:oaIMfg6QcBt+mo2R8GlSj9eUFXgB+jsz9KCsKZGuKcs=",
+    "zh:00824bcd5a72a813e90f1635d59ca3b41818b8c3c1b264ebea20b8555c2bf0c1",
+    "zh:164c662015dc176554da8531f2da10377f1c5ee5517654524a88c3a57c00d687",
+    "zh:1f0dd22a9b94747513b6aade7ea94cf90c2285c2713f0ad1223f38a75fd77521",
+    "zh:2f8b97ae2d7b564376143b442c3ecfdb29de355373ed8ede60ce4d6de2d06d17",
+    "zh:3a7e7d6f52de0843555655303f1b57235a86b749eae5f397c630cd8291df5c00",
+    "zh:3e809f1684edd7a3595fd58c7b7d87b9abed10c09f895b9f5633d780ca8a15a7",
+    "zh:509ce6097c4cf5d0b52eec0e6852458acaf48183074e06648858561daa556d6b",
+    "zh:55ad4dbffeb924ef698a0e7a2fb49ac547ca6b0e942a30c4b55b0933611b7554",
+    "zh:8df08d69d67c2818936823a6d3f8587f9a1529fb9e2706a6cf42974f32b917c5",
+    "zh:91e70da6d7a595290adba625904bbb306e77d0a34a1237265e66c7c294efc695",
+    "zh:92cb7625865819f16b9bfd2bb467d6d53c683d0cffcdcad36e36937f03c47365",
+    "zh:f2d2a33c73ec0122096ad8bdbe68e75d3f6c5d3e2d97f57abe9318371354c2c4",
+  ]
+}
