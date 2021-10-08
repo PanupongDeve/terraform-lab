@@ -1,0 +1,550 @@
+2021-10-08T01:53:16.723Z [DEBUG] Adding temp file log sink: /tmp/terraform-log632090557
+2021-10-08T01:53:16.723Z [INFO]  Terraform version: 1.0.8
+2021-10-08T01:53:16.723Z [INFO]  Go runtime version: go1.16.4
+2021-10-08T01:53:16.723Z [INFO]  CLI args: []string{"/usr/bin/terraform", "plan"}
+2021-10-08T01:53:16.723Z [TRACE] Stdout is a terminal of width 207
+2021-10-08T01:53:16.723Z [TRACE] Stderr is a terminal of width 207
+2021-10-08T01:53:16.723Z [TRACE] Stdin is a terminal
+2021-10-08T01:53:16.723Z [DEBUG] Attempting to open CLI config file: /home/panupongdeve/.terraformrc
+2021-10-08T01:53:16.723Z [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021-10-08T01:53:16.723Z [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021-10-08T01:53:16.723Z [DEBUG] ignoring non-existing provider search directory /home/panupongdeve/.terraform.d/plugins
+2021-10-08T01:53:16.723Z [DEBUG] ignoring non-existing provider search directory /home/panupongdeve/.local/share/terraform/plugins
+2021-10-08T01:53:16.724Z [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2021-10-08T01:53:16.724Z [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2021-10-08T01:53:16.724Z [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2021-10-08T01:53:16.724Z [INFO]  CLI command args: []string{"plan"}
+2021-10-08T01:53:16.725Z [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2021-10-08T01:53:16.725Z [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2021-10-08T01:53:16.725Z [DEBUG] New state was assigned lineage "5eaa27ea-cced-c0f9-fb14-5e073b52898c"
+2021-10-08T01:53:16.725Z [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2021-10-08T01:53:16.725Z [TRACE] Meta.Backend: instantiated backend of type <nil>
+2021-10-08T01:53:16.725Z [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2021-10-08T01:53:16.726Z [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/kreuzwerker/docker v2.15.0 for linux_amd64 at .terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64
+2021-10-08T01:53:16.726Z [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64 as a candidate package for registry.terraform.io/kreuzwerker/docker 2.15.0
+2021-10-08T01:53:16.822Z [DEBUG] checking for provisioner in "."
+2021-10-08T01:53:16.827Z [DEBUG] checking for provisioner in "/usr/bin"
+2021-10-08T01:53:16.827Z [INFO]  Failed to read plugin lock file .terraform/plugins/linux_amd64/lock.json: open .terraform/plugins/linux_amd64/lock.json: no such file or directory
+2021-10-08T01:53:16.827Z [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2021-10-08T01:53:16.828Z [INFO]  backend/local: starting Plan operation
+2021-10-08T01:53:16.828Z [TRACE] backend/local: requesting state manager for workspace "default"
+2021-10-08T01:53:16.828Z [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2021-10-08T01:53:16.828Z [TRACE] backend/local: requesting state lock for workspace "default"
+2021-10-08T01:53:16.828Z [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2021-10-08T01:53:16.828Z [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2021-10-08T01:53:16.828Z [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2021-10-08T01:53:16.828Z [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2021-10-08T01:53:16.828Z [TRACE] backend/local: reading remote state for workspace "default"
+2021-10-08T01:53:16.828Z [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2021-10-08T01:53:16.828Z [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2021-10-08T01:53:16.828Z [TRACE] statemgr.Filesystem: read nil snapshot
+2021-10-08T01:53:16.828Z [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2021-10-08T01:53:16.828Z [TRACE] backend/local: building context for current working directory
+2021-10-08T01:53:16.828Z [TRACE] terraform.NewContext: starting
+2021-10-08T01:53:16.828Z [TRACE] terraform.NewContext: loading provider schemas
+2021-10-08T01:53:16.828Z [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/kreuzwerker/docker"
+2021-10-08T01:53:16.828Z [DEBUG] created provider logger: level=trace
+2021-10-08T01:53:16.828Z [INFO]  provider: configuring client automatic mTLS
+2021-10-08T01:53:16.873Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0 args=[.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0]
+2021-10-08T01:53:16.873Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0 pid=29458
+2021-10-08T01:53:16.873Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0
+2021-10-08T01:53:16.887Z [INFO]  provider.terraform-provider-docker_v2.15.0: configuring server automatic mTLS: timestamp=2021-10-08T01:53:16.887Z
+2021-10-08T01:53:16.928Z [DEBUG] provider: using plugin: version=5
+2021-10-08T01:53:16.928Z [DEBUG] provider.terraform-provider-docker_v2.15.0: plugin address: address=/tmp/plugin201251740 network=unix timestamp=2021-10-08T01:53:16.928Z
+2021-10-08T01:53:16.982Z [TRACE] GRPCProvider: GetProviderSchema
+2021-10-08T01:53:16.982Z [TRACE] provider.stdio: waiting for stdio data
+2021-10-08T01:53:16.988Z [TRACE] GRPCProvider: Close
+2021-10-08T01:53:16.989Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-10-08T01:53:16.991Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0 pid=29458
+2021-10-08T01:53:16.991Z [DEBUG] provider: plugin exited
+2021-10-08T01:53:16.991Z [TRACE] terraform.NewContext: complete
+2021-10-08T01:53:16.991Z [TRACE] backend/local: finished building terraform.Context
+2021-10-08T01:53:16.991Z [TRACE] backend/local: requesting interactive input, if necessary
+2021-10-08T01:53:16.991Z [TRACE] Context.Input: Prompting for provider arguments
+2021-10-08T01:53:16.991Z [TRACE] Context.Input: Provider provider.docker declared at main.tf:12,1-18
+2021-10-08T01:53:16.991Z [TRACE] Context.Input: Input for provider.docker: map[string]cty.Value{}
+2021-10-08T01:53:16.991Z [TRACE] backend/local: running validation operation
+2021-10-08T01:53:16.991Z [INFO]  terraform: building graph: GraphTypeValidate
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.ConfigTransformer
+2021-10-08T01:53:16.991Z [TRACE] ConfigTransformer: Starting for path:
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  docker_container.centos - *terraform.NodeValidatableResource
+  docker_image.terraform-centos - *terraform.NodeValidatableResource
+  ------
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.LocalTransformer
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.OutputTransformer
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.StateTransformer
+2021-10-08T01:53:16.991Z [TRACE] StateTransformer: state is empty, so nothing to do
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2021-10-08T01:53:16.991Z [TRACE] AttachResourceConfigTransformer: attaching to "docker_container.centos" (*terraform.NodeValidatableResource) config from main.tf:21,1-37
+2021-10-08T01:53:16.991Z [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to docker_container.centos
+2021-10-08T01:53:16.991Z [TRACE] AttachResourceConfigTransformer: attaching to "docker_image.terraform-centos" (*terraform.NodeValidatableResource) config from main.tf:15,1-43
+2021-10-08T01:53:16.991Z [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to docker_image.terraform-centos
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2021-10-08T01:53:16.991Z [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2021-10-08T01:53:16.991Z [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/kreuzwerker/docker\"]" provider configuration from main.tf:12,1-18
+2021-10-08T01:53:16.991Z [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  docker_container.centos - *terraform.NodeValidatableResource
+  docker_image.terraform-centos - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  ------
+2021-10-08T01:53:16.991Z [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2021-10-08T01:53:16.991Z [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2021-10-08T01:53:16.991Z [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/kreuzwerker/docker"] serving docker_image.terraform-centos
+2021-10-08T01:53:16.991Z [DEBUG] ProviderTransformer: "docker_image.terraform-centos" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2021-10-08T01:53:16.991Z [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/kreuzwerker/docker"] serving docker_container.centos
+2021-10-08T01:53:16.991Z [DEBUG] ProviderTransformer: "docker_container.centos" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2021-10-08T01:53:16.991Z [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  docker_container.centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  ------
+2021-10-08T01:53:16.991Z [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2021-10-08T01:53:16.991Z [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  docker_container.centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  ------
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2021-10-08T01:53:16.991Z [TRACE] AttachSchemaTransformer: attaching resource schema to docker_container.centos
+2021-10-08T01:53:16.991Z [TRACE] AttachSchemaTransformer: attaching resource schema to docker_image.terraform-centos
+2021-10-08T01:53:16.991Z [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/kreuzwerker/docker"]
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2021-10-08T01:53:16.991Z [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2021-10-08T01:53:16.991Z [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021-10-08T01:53:16.991Z [DEBUG] ReferenceTransformer: "docker_image.terraform-centos" references: []
+2021-10-08T01:53:16.991Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/kreuzwerker/docker\"]" references: []
+2021-10-08T01:53:16.992Z [DEBUG] ReferenceTransformer: "docker_container.centos" references: [docker_image.terraform-centos]
+2021-10-08T01:53:16.992Z [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  docker_container.centos - *terraform.NodeValidatableResource
+    docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  ------
+2021-10-08T01:53:16.992Z [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2021-10-08T01:53:16.992Z [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2021-10-08T01:53:16.992Z [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2021-10-08T01:53:16.992Z [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2021-10-08T01:53:16.992Z [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021-10-08T01:53:16.992Z [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021-10-08T01:53:16.992Z [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2021-10-08T01:53:16.992Z [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2021-10-08T01:53:16.992Z [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2021-10-08T01:53:16.992Z [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  docker_container.centos - *terraform.NodeValidatableResource
+    docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    docker_container.centos - *terraform.NodeValidatableResource
+    docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  ------
+2021-10-08T01:53:16.992Z [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2021-10-08T01:53:16.992Z [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  docker_container.centos - *terraform.NodeValidatableResource
+    docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    docker_container.centos - *terraform.NodeValidatableResource
+    docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] (close) - *terraform.graphNodeCloseProvider
+    docker_container.centos - *terraform.NodeValidatableResource
+    docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  ------
+2021-10-08T01:53:16.992Z [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2021-10-08T01:53:16.992Z [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  docker_container.centos - *terraform.NodeValidatableResource
+    docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    docker_container.centos - *terraform.NodeValidatableResource
+    docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] (close) - *terraform.graphNodeCloseProvider
+    docker_container.centos - *terraform.NodeValidatableResource
+    docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/kreuzwerker/docker"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021-10-08T01:53:16.992Z [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2021-10-08T01:53:16.992Z [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  docker_container.centos - *terraform.NodeValidatableResource
+    docker_image.terraform-centos - *terraform.NodeValidatableResource
+  docker_image.terraform-centos - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    docker_container.centos - *terraform.NodeValidatableResource
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] (close) - *terraform.graphNodeCloseProvider
+    docker_container.centos - *terraform.NodeValidatableResource
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/kreuzwerker/docker"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021-10-08T01:53:16.992Z [DEBUG] Starting graph walk: walkValidate
+2021-10-08T01:53:16.992Z [TRACE] vertex "provider[\"registry.terraform.io/kreuzwerker/docker\"]": starting visit (*terraform.NodeApplyableProvider)
+2021-10-08T01:53:16.992Z [DEBUG] created provider logger: level=trace
+2021-10-08T01:53:16.992Z [INFO]  provider: configuring client automatic mTLS
+2021-10-08T01:53:17.031Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0 args=[.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0]
+2021-10-08T01:53:17.031Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0 pid=29467
+2021-10-08T01:53:17.031Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0
+2021-10-08T01:53:17.046Z [INFO]  provider.terraform-provider-docker_v2.15.0: configuring server automatic mTLS: timestamp=2021-10-08T01:53:17.045Z
+2021-10-08T01:53:17.089Z [DEBUG] provider: using plugin: version=5
+2021-10-08T01:53:17.089Z [DEBUG] provider.terraform-provider-docker_v2.15.0: plugin address: address=/tmp/plugin228733937 network=unix timestamp=2021-10-08T01:53:17.089Z
+2021-10-08T01:53:17.137Z [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/kreuzwerker/docker\"]" provider for provider["registry.terraform.io/kreuzwerker/docker"]
+2021-10-08T01:53:17.137Z [TRACE] provider.stdio: waiting for stdio data
+2021-10-08T01:53:17.137Z [TRACE] buildProviderConfig for provider["registry.terraform.io/kreuzwerker/docker"]: using explicit config only
+2021-10-08T01:53:17.138Z [TRACE] vertex "provider[\"registry.terraform.io/kreuzwerker/docker\"]": visit complete
+2021-10-08T01:53:17.138Z [TRACE] vertex "docker_image.terraform-centos": starting visit (*terraform.NodeValidatableResource)
+2021-10-08T01:53:17.138Z [TRACE] GRPCProvider: ValidateResourceConfig
+2021-10-08T01:53:17.138Z [TRACE] GRPCProvider: GetProviderSchema
+2021-10-08T01:53:17.142Z [TRACE] vertex "docker_image.terraform-centos": visit complete
+2021-10-08T01:53:17.142Z [TRACE] vertex "docker_container.centos": starting visit (*terraform.NodeValidatableResource)
+2021-10-08T01:53:17.142Z [TRACE] GRPCProvider: ValidateResourceConfig
+2021-10-08T01:53:17.143Z [TRACE] vertex "docker_container.centos": visit complete
+2021-10-08T01:53:17.143Z [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2021-10-08T01:53:17.143Z [TRACE] vertex "provider[\"registry.terraform.io/kreuzwerker/docker\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2021-10-08T01:53:17.143Z [TRACE] GRPCProvider: Close
+2021-10-08T01:53:17.143Z [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2021-10-08T01:53:17.144Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-10-08T01:53:17.146Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0 pid=29467
+2021-10-08T01:53:17.146Z [DEBUG] provider: plugin exited
+2021-10-08T01:53:17.146Z [TRACE] vertex "provider[\"registry.terraform.io/kreuzwerker/docker\"] (close)": visit complete
+2021-10-08T01:53:17.146Z [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2021-10-08T01:53:17.146Z [TRACE] vertex "root": visit complete
+2021-10-08T01:53:17.146Z [INFO]  backend/local: plan calling Plan
+2021-10-08T01:53:17.146Z [INFO]  terraform: building graph: GraphTypePlan
+2021-10-08T01:53:17.146Z [TRACE] Executing graph transform *terraform.ConfigTransformer
+2021-10-08T01:53:17.146Z [TRACE] ConfigTransformer: Starting for path:
+2021-10-08T01:53:17.146Z [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+  docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+  ------
+2021-10-08T01:53:17.146Z [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2021-10-08T01:53:17.146Z [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2021-10-08T01:53:17.146Z [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2021-10-08T01:53:17.146Z [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2021-10-08T01:53:17.146Z [TRACE] Executing graph transform *terraform.LocalTransformer
+2021-10-08T01:53:17.146Z [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2021-10-08T01:53:17.146Z [TRACE] Executing graph transform *terraform.OutputTransformer
+2021-10-08T01:53:17.146Z [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2021-10-08T01:53:17.146Z [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2021-10-08T01:53:17.146Z [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2021-10-08T01:53:17.146Z [TRACE] Executing graph transform *terraform.StateTransformer
+2021-10-08T01:53:17.146Z [TRACE] StateTransformer: state is empty, so nothing to do
+2021-10-08T01:53:17.146Z [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2021-10-08T01:53:17.146Z [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021-10-08T01:53:17.146Z [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021-10-08T01:53:17.146Z [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2021-10-08T01:53:17.146Z [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2021-10-08T01:53:17.146Z [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2021-10-08T01:53:17.146Z [TRACE] AttachResourceConfigTransformer: attaching to "docker_image.terraform-centos (expand)" (*terraform.nodeExpandPlannableResource) config from main.tf:15,1-43
+2021-10-08T01:53:17.146Z [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to docker_image.terraform-centos (expand)
+2021-10-08T01:53:17.146Z [TRACE] AttachResourceConfigTransformer: attaching to "docker_container.centos (expand)" (*terraform.nodeExpandPlannableResource) config from main.tf:21,1-37
+2021-10-08T01:53:17.146Z [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to docker_container.centos (expand)
+2021-10-08T01:53:17.146Z [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2021-10-08T01:53:17.146Z [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2021-10-08T01:53:17.146Z [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2021-10-08T01:53:17.146Z [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/kreuzwerker/docker\"]" provider configuration from main.tf:12,1-18
+2021-10-08T01:53:17.146Z [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+  docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  ------
+2021-10-08T01:53:17.146Z [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2021-10-08T01:53:17.146Z [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2021-10-08T01:53:17.146Z [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2021-10-08T01:53:17.146Z [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/kreuzwerker/docker"] serving docker_image.terraform-centos (expand)
+2021-10-08T01:53:17.146Z [DEBUG] ProviderTransformer: "docker_image.terraform-centos (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2021-10-08T01:53:17.146Z [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/kreuzwerker/docker"] serving docker_container.centos (expand)
+2021-10-08T01:53:17.146Z [DEBUG] ProviderTransformer: "docker_container.centos (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/kreuzwerker/docker"]
+2021-10-08T01:53:17.146Z [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  ------
+2021-10-08T01:53:17.146Z [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2021-10-08T01:53:17.146Z [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2021-10-08T01:53:17.146Z [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  ------
+2021-10-08T01:53:17.147Z [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2021-10-08T01:53:17.147Z [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2021-10-08T01:53:17.147Z [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2021-10-08T01:53:17.147Z [TRACE] AttachSchemaTransformer: attaching resource schema to docker_image.terraform-centos (expand)
+2021-10-08T01:53:17.147Z [TRACE] AttachSchemaTransformer: attaching resource schema to docker_container.centos (expand)
+2021-10-08T01:53:17.147Z [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/kreuzwerker/docker"]
+2021-10-08T01:53:17.147Z [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2021-10-08T01:53:17.147Z [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2021-10-08T01:53:17.147Z [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2021-10-08T01:53:17.147Z [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021-10-08T01:53:17.147Z [DEBUG] ReferenceTransformer: "docker_image.terraform-centos (expand)" references: []
+2021-10-08T01:53:17.147Z [DEBUG] ReferenceTransformer: "docker_container.centos (expand)" references: [docker_image.terraform-centos (expand)]
+2021-10-08T01:53:17.147Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/kreuzwerker/docker\"]" references: []
+2021-10-08T01:53:17.147Z [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+    docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  ------
+2021-10-08T01:53:17.147Z [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2021-10-08T01:53:17.147Z [TRACE] AttachDependenciesTransformer: docker_image.terraform-centos depends on []
+2021-10-08T01:53:17.147Z [TRACE] AttachDependenciesTransformer: docker_container.centos depends on [docker_image.terraform-centos]
+2021-10-08T01:53:17.147Z [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2021-10-08T01:53:17.147Z [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2021-10-08T01:53:17.147Z [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2021-10-08T01:53:17.147Z [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021-10-08T01:53:17.147Z [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021-10-08T01:53:17.147Z [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2021-10-08T01:53:17.147Z [TRACE] ForcedCBDTransformer: "docker_image.terraform-centos (expand)" (*terraform.nodeExpandPlannableResource) has no CBD descendent, so skipping
+2021-10-08T01:53:17.147Z [TRACE] ForcedCBDTransformer: "docker_container.centos (expand)" (*terraform.nodeExpandPlannableResource) has no CBD descendent, so skipping
+2021-10-08T01:53:17.147Z [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2021-10-08T01:53:17.147Z [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2021-10-08T01:53:17.147Z [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+    docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+    docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  ------
+2021-10-08T01:53:17.147Z [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2021-10-08T01:53:17.147Z [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+    docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+    docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] (close) - *terraform.graphNodeCloseProvider
+    docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+    docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  ------
+2021-10-08T01:53:17.147Z [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2021-10-08T01:53:17.147Z [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+    docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+    docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] (close) - *terraform.graphNodeCloseProvider
+    docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+    docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/kreuzwerker/docker"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021-10-08T01:53:17.147Z [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2021-10-08T01:53:17.147Z [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+    docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+  docker_image.terraform-centos (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+  provider["registry.terraform.io/kreuzwerker/docker"] - *terraform.NodeApplyableProvider
+  provider["registry.terraform.io/kreuzwerker/docker"] (close) - *terraform.graphNodeCloseProvider
+    docker_container.centos (expand) - *terraform.nodeExpandPlannableResource
+  root - *terraform.nodeCloseModule
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider["registry.terraform.io/kreuzwerker/docker"] (close) - *terraform.graphNodeCloseProvider
+  ------
+2021-10-08T01:53:17.147Z [DEBUG] Starting graph walk: walkPlan
+2021-10-08T01:53:17.147Z [TRACE] vertex "provider[\"registry.terraform.io/kreuzwerker/docker\"]": starting visit (*terraform.NodeApplyableProvider)
+2021-10-08T01:53:17.147Z [DEBUG] created provider logger: level=trace
+2021-10-08T01:53:17.147Z [INFO]  provider: configuring client automatic mTLS
+2021-10-08T01:53:17.186Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0 args=[.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0]
+2021-10-08T01:53:17.186Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0 pid=29476
+2021-10-08T01:53:17.187Z [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0
+2021-10-08T01:53:17.200Z [INFO]  provider.terraform-provider-docker_v2.15.0: configuring server automatic mTLS: timestamp=2021-10-08T01:53:17.200Z
+2021-10-08T01:53:17.244Z [DEBUG] provider.terraform-provider-docker_v2.15.0: plugin address: network=unix address=/tmp/plugin814950426 timestamp=2021-10-08T01:53:17.244Z
+2021-10-08T01:53:17.244Z [DEBUG] provider: using plugin: version=5
+2021-10-08T01:53:17.303Z [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/kreuzwerker/docker\"]" provider for provider["registry.terraform.io/kreuzwerker/docker"]
+2021-10-08T01:53:17.303Z [TRACE] provider.stdio: waiting for stdio data
+2021-10-08T01:53:17.303Z [TRACE] buildProviderConfig for provider["registry.terraform.io/kreuzwerker/docker"]: using explicit config only
+2021-10-08T01:53:17.303Z [TRACE] GRPCProvider: GetProviderSchema
+2021-10-08T01:53:17.306Z [TRACE] GRPCProvider: ValidateProviderConfig
+2021-10-08T01:53:17.310Z [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/kreuzwerker/docker\"]" changed the config value, but that value is unused
+2021-10-08T01:53:17.310Z [TRACE] GRPCProvider: ConfigureProvider
+2021-10-08T01:53:17.312Z [TRACE] vertex "provider[\"registry.terraform.io/kreuzwerker/docker\"]": visit complete
+2021-10-08T01:53:17.312Z [TRACE] vertex "docker_image.terraform-centos (expand)": starting visit (*terraform.nodeExpandPlannableResource)
+2021-10-08T01:53:17.312Z [TRACE] vertex "docker_image.terraform-centos (expand)": expanding dynamic subgraph
+2021-10-08T01:53:17.312Z [TRACE] vertex "docker_image.terraform-centos (expand)": entering dynamic subgraph
+2021-10-08T01:53:17.312Z [TRACE] vertex "docker_image.terraform-centos": starting visit (*terraform.NodePlannableResource)
+2021-10-08T01:53:17.312Z [TRACE] vertex "docker_image.terraform-centos": expanding dynamic subgraph
+2021-10-08T01:53:17.312Z [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2021-10-08T01:53:17.312Z [TRACE] ResourceCountTransformer: adding docker_image.terraform-centos as *terraform.NodePlannableResourceInstance
+2021-10-08T01:53:17.312Z [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+  docker_image.terraform-centos - *terraform.NodePlannableResourceInstance
+  ------
+2021-10-08T01:53:17.312Z [TRACE] Executing graph transform *terraform.OrphanResourceInstanceCountTransformer
+2021-10-08T01:53:17.312Z [TRACE] Completed graph transform *terraform.OrphanResourceInstanceCountTransformer (no changes)
+2021-10-08T01:53:17.312Z [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021-10-08T01:53:17.312Z [DEBUG] Resource instance state not found for node "docker_image.terraform-centos", instance docker_image.terraform-centos
+2021-10-08T01:53:17.312Z [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021-10-08T01:53:17.312Z [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021-10-08T01:53:17.312Z [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021-10-08T01:53:17.312Z [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021-10-08T01:53:17.312Z [DEBUG] ReferenceTransformer: "docker_image.terraform-centos" references: []
+2021-10-08T01:53:17.312Z [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2021-10-08T01:53:17.312Z [TRACE] Executing graph transform *terraform.RootTransformer
+2021-10-08T01:53:17.312Z [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2021-10-08T01:53:17.312Z [TRACE] vertex "docker_image.terraform-centos": entering dynamic subgraph
+2021-10-08T01:53:17.312Z [TRACE] vertex "docker_image.terraform-centos": starting visit (*terraform.NodePlannableResourceInstance)
+2021-10-08T01:53:17.312Z [TRACE] readResourceInstanceState: reading state for docker_image.terraform-centos
+2021-10-08T01:53:17.312Z [TRACE] readResourceInstanceState: no state present for docker_image.terraform-centos
+2021-10-08T01:53:17.312Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to prevRunState for docker_image.terraform-centos
+2021-10-08T01:53:17.312Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for docker_image.terraform-centos
+2021-10-08T01:53:17.313Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for docker_image.terraform-centos
+2021-10-08T01:53:17.313Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for docker_image.terraform-centos
+2021-10-08T01:53:17.313Z [TRACE] NodeAbstractResourceInstance.refresh for docker_image.terraform-centos
+2021-10-08T01:53:17.313Z [DEBUG] refresh: docker_image.terraform-centos: no state, so not refreshing
+2021-10-08T01:53:17.313Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for docker_image.terraform-centos
+2021-10-08T01:53:17.313Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for docker_image.terraform-centos
+2021-10-08T01:53:17.313Z [TRACE] Re-validating config for "docker_image.terraform-centos"
+2021-10-08T01:53:17.313Z [TRACE] GRPCProvider: ValidateResourceConfig
+2021-10-08T01:53:17.313Z [TRACE] GRPCProvider: PlanResourceChange
+2021-10-08T01:53:17.314Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to workingState for docker_image.terraform-centos
+2021-10-08T01:53:17.314Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for docker_image.terraform-centos
+2021-10-08T01:53:17.314Z [TRACE] writeChange: recorded Create change for docker_image.terraform-centos
+2021-10-08T01:53:17.314Z [TRACE] vertex "docker_image.terraform-centos": visit complete
+2021-10-08T01:53:17.314Z [TRACE] vertex "docker_image.terraform-centos": dynamic subgraph completed successfully
+2021-10-08T01:53:17.314Z [TRACE] vertex "docker_image.terraform-centos": visit complete
+2021-10-08T01:53:17.314Z [TRACE] vertex "docker_image.terraform-centos (expand)": dynamic subgraph completed successfully
+2021-10-08T01:53:17.314Z [TRACE] vertex "docker_image.terraform-centos (expand)": visit complete
+2021-10-08T01:53:17.314Z [TRACE] vertex "docker_container.centos (expand)": starting visit (*terraform.nodeExpandPlannableResource)
+2021-10-08T01:53:17.314Z [TRACE] vertex "docker_container.centos (expand)": expanding dynamic subgraph
+2021-10-08T01:53:17.314Z [TRACE] vertex "docker_container.centos (expand)": entering dynamic subgraph
+2021-10-08T01:53:17.314Z [TRACE] vertex "docker_container.centos": starting visit (*terraform.NodePlannableResource)
+2021-10-08T01:53:17.314Z [TRACE] vertex "docker_container.centos": expanding dynamic subgraph
+2021-10-08T01:53:17.314Z [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2021-10-08T01:53:17.314Z [TRACE] ResourceCountTransformer: adding docker_container.centos as *terraform.NodePlannableResourceInstance
+2021-10-08T01:53:17.314Z [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+  docker_container.centos - *terraform.NodePlannableResourceInstance
+  ------
+2021-10-08T01:53:17.314Z [TRACE] Executing graph transform *terraform.OrphanResourceInstanceCountTransformer
+2021-10-08T01:53:17.314Z [TRACE] Completed graph transform *terraform.OrphanResourceInstanceCountTransformer (no changes)
+2021-10-08T01:53:17.314Z [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2021-10-08T01:53:17.315Z [DEBUG] Resource instance state not found for node "docker_container.centos", instance docker_container.centos
+2021-10-08T01:53:17.315Z [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2021-10-08T01:53:17.315Z [TRACE] Executing graph transform *terraform.TargetsTransformer
+2021-10-08T01:53:17.315Z [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2021-10-08T01:53:17.315Z [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2021-10-08T01:53:17.315Z [DEBUG] ReferenceTransformer: "docker_container.centos" references: []
+2021-10-08T01:53:17.315Z [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2021-10-08T01:53:17.315Z [TRACE] Executing graph transform *terraform.RootTransformer
+2021-10-08T01:53:17.315Z [TRACE] Completed graph transform *terraform.RootTransformer (no changes)
+2021-10-08T01:53:17.315Z [TRACE] vertex "docker_container.centos": entering dynamic subgraph
+2021-10-08T01:53:17.315Z [TRACE] vertex "docker_container.centos": starting visit (*terraform.NodePlannableResourceInstance)
+2021-10-08T01:53:17.315Z [TRACE] readResourceInstanceState: reading state for docker_container.centos
+2021-10-08T01:53:17.315Z [TRACE] readResourceInstanceState: no state present for docker_container.centos
+2021-10-08T01:53:17.315Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to prevRunState for docker_container.centos
+2021-10-08T01:53:17.315Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for docker_container.centos
+2021-10-08T01:53:17.315Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for docker_container.centos
+2021-10-08T01:53:17.315Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for docker_container.centos
+2021-10-08T01:53:17.315Z [TRACE] NodeAbstractResourceInstance.refresh for docker_container.centos
+2021-10-08T01:53:17.315Z [DEBUG] refresh: docker_container.centos: no state, so not refreshing
+2021-10-08T01:53:17.315Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for docker_container.centos
+2021-10-08T01:53:17.315Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for docker_container.centos
+2021-10-08T01:53:17.316Z [TRACE] Re-validating config for "docker_container.centos"
+2021-10-08T01:53:17.316Z [TRACE] GRPCProvider: ValidateResourceConfig
+2021-10-08T01:53:17.321Z [TRACE] GRPCProvider: PlanResourceChange
+2021-10-08T01:53:17.324Z [WARN]  Provider "registry.terraform.io/kreuzwerker/docker" produced an invalid plan for docker_container.centos, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .read_only: planned value cty.False for a non-computed attribute
+      - .rm: planned value cty.False for a non-computed attribute
+      - .tty: planned value cty.False for a non-computed attribute
+      - .remove_volumes: planned value cty.True for a non-computed attribute
+      - .attach: planned value cty.False for a non-computed attribute
+      - .log_driver: planned value cty.StringVal("json-file") for a non-computed attribute
+      - .logs: planned value cty.False for a non-computed attribute
+      - .must_run: planned value cty.True for a non-computed attribute
+      - .restart: planned value cty.StringVal("no") for a non-computed attribute
+      - .stdin_open: planned value cty.False for a non-computed attribute
+      - .labels: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .healthcheck: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2021-10-08T01:53:17.324Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to workingState for docker_container.centos
+2021-10-08T01:53:17.324Z [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for docker_container.centos
+2021-10-08T01:53:17.324Z [TRACE] writeChange: recorded Create change for docker_container.centos
+2021-10-08T01:53:17.324Z [TRACE] vertex "docker_container.centos": visit complete
+2021-10-08T01:53:17.324Z [TRACE] vertex "docker_container.centos": dynamic subgraph completed successfully
+2021-10-08T01:53:17.324Z [TRACE] vertex "docker_container.centos": visit complete
+2021-10-08T01:53:17.324Z [TRACE] vertex "docker_container.centos (expand)": dynamic subgraph completed successfully
+2021-10-08T01:53:17.324Z [TRACE] vertex "docker_container.centos (expand)": visit complete
+2021-10-08T01:53:17.324Z [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2021-10-08T01:53:17.324Z [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2021-10-08T01:53:17.324Z [TRACE] vertex "provider[\"registry.terraform.io/kreuzwerker/docker\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2021-10-08T01:53:17.325Z [TRACE] GRPCProvider: Close
+2021-10-08T01:53:17.325Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-10-08T01:53:17.326Z [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/kreuzwerker/docker/2.15.0/linux_amd64/terraform-provider-docker_v2.15.0 pid=29476
+2021-10-08T01:53:17.326Z [DEBUG] provider: plugin exited
+2021-10-08T01:53:17.326Z [TRACE] vertex "provider[\"registry.terraform.io/kreuzwerker/docker\"] (close)": visit complete
+2021-10-08T01:53:17.326Z [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2021-10-08T01:53:17.326Z [TRACE] vertex "root": visit complete
+2021-10-08T01:53:17.326Z [INFO]  backend/local: plan operation completed
+2021-10-08T01:53:17.339Z [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2021-10-08T01:53:17.342Z [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
